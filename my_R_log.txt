@@ -1,0 +1,612 @@
+# A tibble: 6 x 170
+  id      age  gender   ethn    race marital    educ  employ AVERAGE_SBP AVERAGE_DBP
+  <chr> <dbl> <dbl+l> <dbl+> <dbl+l> <dbl+l> <dbl+l> <dbl+l>       <dbl>       <dbl>
+1 1004…    43 1 [Wom… 0 [No] 1 [Bla… 1 [Sin… 2 [HS/… 6 [Une…        126.        76.3
+2 1013…    52 1 [Wom… 0 [No] 1 [Bla… 4 [Div… 1 [Did… 5 [Dis…        154.        91  
+3 1013…    52 0 [Man] 0 [No] 1 [Bla… 1 [Sin… 5 [Som… 5 [Dis…        132.        85  
+4 1020…    53 1 [Wom… 0 [No] 1 [Bla… 1 [Sin… 1 [Did… 2 [Par…        121.        66  
+5 1023…    57 1 [Wom… 0 [No] 1 [Bla… 2 [Mar… 5 [Som… 4 [Ret…        113         59.3
+6 1025…    46 1 [Wom… 0 [No] 1 [Bla… 1 [Sin… 2 [HS/… 1 [Ful…        110.        77.3
+# … with 160 more variables: ht <dbl>, weight <dbl>, bmi <dbl>,
+#   FOODSECURITY1 <dbl+lbl>, FOODSECURITY2 <dbl+lbl>, TFEQ1 <dbl+lbl>,
+#   TFEQ2 <dbl+lbl>, TFEQ3 <dbl+lbl>, TFEQ4 <dbl+lbl>, TFEQ5 <dbl+lbl>, TFEQ6 <dbl>,
+#   UNDER1 <dbl+lbl>, UNDER2 <dbl+lbl>, UNDER3 <dbl+lbl>, UNDER4 <dbl+lbl>,
+#   UNDER5 <dbl+lbl>, UNDER6 <dbl+lbl>, UNDER7 <dbl+lbl>, UNDER8 <dbl+lbl>,
+#   UNDER9 <dbl+lbl>, UNDER10 <dbl+lbl>, UNDER11 <dbl+lbl>, UNDER12 <dbl+lbl>,
+#   UNDER13 <dbl+lbl>, UNDER14 <dbl+lbl>, UNDER15 <dbl+lbl>, UNDER_16 <dbl+lbl>,
+#   UNDER_17 <dbl+lbl>, PA_WORK <dbl+lbl>, PA_EXER <dbl+lbl>, PA_STRENUOUS <dbl+lbl>,
+#   PA_WEEK <dbl+lbl>, htn <dbl+lbl>, mi <dbl+lbl>, dm <dbl+lbl>, choles <dbl+lbl>,
+#   DAY_CRIME <dbl+lbl>, NIGHT_CRIME <dbl+lbl>, WALK_GROCERY1 <dbl+lbl>,
+#   WALK_GROCERY2 <dbl+lbl>, CAR_GROCERY <dbl+lbl>, TFEQ1_3M <dbl+lbl>,
+#   TFEQ2_3M <dbl+lbl>, TFEQ3_3M <dbl+lbl>, TFEQ4_3M <dbl+lbl>, TFEQ5_3M <dbl+lbl>,
+#   TFEQ6_3M <dbl>, UNDER1_3M <dbl+lbl>, UNDER2_3M <dbl+lbl>, UNDER3_3M <dbl+lbl>,
+#   UNDER4_3M <dbl+lbl>, UNDER5_3M <dbl+lbl>, UNDER6_3M <dbl+lbl>,
+#   UNDER7_3M <dbl+lbl>, UNDER8_3M <dbl+lbl>, UNDER9_3M <dbl+lbl>,
+#   UNDER10_3M <dbl+lbl>, UNDER11_3M <dbl+lbl>, UNDER12_3M <dbl+lbl>,
+#   UNDER13_3M <dbl+lbl>, UNDER14_3M <dbl+lbl>, UNDER15_3M <dbl+lbl>,
+#   UNDER16_3M <dbl+lbl>, UNDER17_3M <dbl+lbl>, HTN_3M <dbl+lbl>, MI_3M <dbl+lbl>,
+#   DM_3M <dbl+lbl>, CHOLES_3M <dbl+lbl>, TRAFFIC_3M <dbl+lbl>,
+#   DAY_CRIME_3M <dbl+lbl>, NIGHT_CRIME_3M <dbl+lbl>, WALK_GROCERY1_3M <dbl+lbl>,
+#   WALK_GROCERY2_3M <dbl+lbl>, CAR_GROCERY_3M <dbl+lbl>, AVERAGE_SBP_3M <dbl>,
+#   AVERAGE_DBP_3M <dbl>, WEIGHT_3M <dbl>, EMPLOY_6M <dbl+lbl>, AVGSBP_6M <dbl>,
+#   AVGDBP_6M <dbl>, FOODINSECURITY1_6M <dbl+lbl>, FOODINSECURITY2_6M <dbl+lbl>,
+#   TFEQ1_6M <dbl+lbl>, TFEQ2_6M <dbl+lbl>, TFEQ3_6M <dbl+lbl>, TFEQ4_6M <dbl+lbl>,
+#   TFEQ5_6M <dbl+lbl>, TFEQ6_6M <dbl>, UNDER1_6M <dbl+lbl>, UNDER2_6M <dbl+lbl>,
+#   UNDER3_6M <dbl+lbl>, UNDER4_6M <dbl+lbl>, UNDER5_6M <dbl+lbl>,
+#   UNDER6_6M <dbl+lbl>, UNDER7_6M <dbl+lbl>, UNDER8_6M <dbl+lbl>,
+#   UNDER9_6M <dbl+lbl>, UNDER10_6M <dbl+lbl>, UNDER11_6M <dbl+lbl>,
+#   UNDER12_6M <dbl+lbl>, …
+Rows: 34
+Columns: 170
+$ id                    <chr> "10049-1", "10133-1", "10133-2", "10201-1", "10237-1",…
+$ age                   <dbl> 43, 52, 52, 53, 57, 46, 44, 26, 61, 36, 57, 50, 53, 29…
+$ gender                <dbl+lbl> 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ ethn                  <dbl+lbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,…
+$ race                  <dbl+lbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1,…
+$ marital               <dbl+lbl> 1, 4, 1, 1, 2, 1, 1, 1, 1, 2, 1, 4, 5, 1, 1, 1, 1,…
+$ educ                  <dbl+lbl> 2, 1, 5, 1, 5, 2, 1, 1, 5, 1, 1, 2, 5, 2, 1, 2, 2,…
+$ employ                <dbl+lbl> 6, 5, 5, 2, 4, 1, 6, 6, 5, 2, 6, 2, 5, 6, 6, 6, 5,…
+$ AVERAGE_SBP           <dbl> 125.66667, 153.66667, 131.66667, 121.33333, 113.00000,…
+$ AVERAGE_DBP           <dbl> 76.33333, 91.00000, 85.00000, 66.00000, 59.33333, 77.3…
+$ ht                    <dbl> 61.0, 63.5, 66.5, 65.0, 65.0, 57.5, 65.0, 65.0, 63.0, …
+$ weight                <dbl> 213.6, 215.5, 175.2, 213.2, 173.0, 160.6, 177.4, 162.0…
+$ bmi                   <dbl> 40.35496, 37.57121, 27.85134, 35.47446, 28.78556, 34.1…
+$ FOODSECURITY1         <dbl+lbl> 2, 1, 3, 2, 1, 3, 1, 2, 2, 3, 3, 2, 1, 3, 2, 2, 2,…
+$ FOODSECURITY2         <dbl+lbl> 3, 1, 2, 2, 1, 3, 1, 2, 3, 3, 3, 2, 2, 3, 2, 2, 2,…
+$ TFEQ1                 <dbl+lbl> 1, 4, 4, 3, 4, 2, 1, 1, 3, 4, 4, 1, 1, 1, 3, 4, 1,…
+$ TFEQ2                 <dbl+lbl> 1, 3, 4, 3, 1, 2, 2, 1, 3, 4, 4, 1, 1, 2, 2, 4, 2,…
+$ TFEQ3                 <dbl+lbl> 1, 4, 4, 4, 3, 2, 2, 1, 3, 1, 1, 1, 1, 2, 2, 3, 3,…
+$ TFEQ4                 <dbl+lbl> 2, 3, 1, 3, 3, 2, 1, 1, 4, 1, 1, 1, 1, 1, 1, 4, 2,…
+$ TFEQ5                 <dbl+lbl> 1, 3, 2, 1, 2, 2, 1, 1, 2, 3, 3, 1, 1, 1, 2, 4, 4,…
+$ TFEQ6                 <dbl> 4, 8, 7, 6, 1, 5, 4, 1, 6, 1, 2, 1, 3, 1, 1, 4, 1, 3, …
+$ UNDER1                <dbl+lbl> 1, 2, 3, 3, 2, 2, 1, 1, 4, 3, 4, 3, 1, 4, 1, 3, 1,…
+$ UNDER2                <dbl+lbl> 1, 3, 3, 4, 2, 2, 1, 1, 5, 1, 3, 4, 3, 4, 1, 1, 1,…
+$ UNDER3                <dbl+lbl> 1, 3, 3, 3, 4, 2, 1, 1, 5, 1, 4, 3, 3, 4, 1, 1, 1,…
+$ UNDER4                <dbl+lbl>  1,  4,  1,  4,  4, NA,  2,  4,  5,  1,  4,  1,  1…
+$ UNDER5                <dbl+lbl> 1, 4, 1, 4, 1, 2, 3, 1, 5, 1, 3, 3, 2, 3, 1, 2, 4,…
+$ UNDER6                <dbl+lbl> 3, 3, 1, 4, 1, 2, 1, 3, 3, 3, 4, 1, 2, 3, 1, 1, 1,…
+$ UNDER7                <dbl+lbl> 1, 3, 1, 3, 1, 1, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 2,…
+$ UNDER8                <dbl+lbl> 5, 2, 5, 2, 4, 3, 5, 4, 4, 5, 5, 5, 5, 5, 4, 5, 4,…
+$ UNDER9                <dbl+lbl> 4, 1, 3, 2, 4, 3, 4, 4, 1, 5, 4, 5, 5, 5, 4, 5, 5,…
+$ UNDER10               <dbl+lbl> 4, 1, 3, 2, 4, 2, 4, 3, 1, 5, 4, 5, 4, 5, 4, 5, 5,…
+$ UNDER11               <dbl+lbl> 4, 3, 3, 2, 4, 4, 4, 4, 1, 5, 4, 5, 3, 5, 4, 5, 5,…
+$ UNDER12               <dbl+lbl> 3, 4, 3, 4, 1, 1, 3, 3, 3, 1, 3, 1, 2, 1, 1, 1, 1,…
+$ UNDER13               <dbl+lbl> 3, 4, 3, 4, 4, 1, 3, 1, 1, 1, 3, 1, 2, 4, 1, 3, 2,…
+$ UNDER14               <dbl+lbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ UNDER15               <dbl+lbl> 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1,…
+$ UNDER_16              <dbl+lbl> 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1,…
+$ UNDER_17              <dbl+lbl> 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ PA_WORK               <dbl+lbl> 6, 6, 6, 2, 6, 2, 6, 6, 6, 1, 6, 3, 6, 6, 6, 6, 6,…
+$ PA_EXER               <dbl+lbl>  3,  1,  4,  3,  2,  2,  1,  1,  3,  2,  1,  5,  4…
+$ PA_STRENUOUS          <dbl+lbl> 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,…
+$ PA_WEEK               <dbl+lbl> 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1,…
+$ htn                   <dbl+lbl> 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,…
+$ mi                    <dbl+lbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ dm                    <dbl+lbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ choles                <dbl+lbl> 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1,…
+$ DAY_CRIME             <dbl+lbl> 3, 3, 1, 1, 1, 3, 1, 2, 2, 2, 4, 2, 1, 3, 2, 2, 2,…
+$ NIGHT_CRIME           <dbl+lbl> 3, 3, 1, 1, 1, 3, 1, 2, 1, 1, 4, 1, 1, 3, 2, 1, 1,…
+$ WALK_GROCERY1         <dbl+lbl> 3, 1, 1, 3, 1, 3, 1, 2, 4, 2, 3, 1, 4, 3, 2, 4, 4,…
+$ WALK_GROCERY2         <dbl+lbl> 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1,…
+$ CAR_GROCERY           <dbl+lbl> 3, 1, 1, 1, 3, 1, 2, 2, 1, 1, 1, 2, 2, 2, 4, 1, 1,…
+$ TFEQ1_3M              <dbl+lbl>  3,  4,  3,  4,  4,  3,  1,  1,  2,  4,  3,  1,  3…
+$ TFEQ2_3M              <dbl+lbl>  2,  3,  4,  4,  4,  3,  1,  1,  1,  4,  3,  2,  1…
+$ TFEQ3_3M              <dbl+lbl>  1,  3,  4,  4,  3,  2,  1,  1,  3,  4,  2,  2,  1…
+$ TFEQ4_3M              <dbl+lbl>  3,  4,  2,  4,  2,  3,  2,  1,  1,  1,  4,  2,  2…
+$ TFEQ5_3M              <dbl+lbl>  1,  4,  2,  3,  4,  2,  1,  1,  1,  4,  4,  3,  2…
+$ TFEQ6_3M              <dbl> 4, 8, 5, 5, 6, 5, 1, 2, 6, 8, 4, 6, 3, 3, NA, 5, 5, 6,…
+$ UNDER1_3M             <dbl+lbl>  4,  3,  3,  2,  3,  2,  2,  1,  4,  5,  5,  2,  2…
+$ UNDER2_3M             <dbl+lbl>  4,  4,  3,  3,  2,  2,  1,  1,  3,  4,  4,  3,  1…
+$ UNDER3_3M             <dbl+lbl>  1,  3,  5,  4,  2,  2,  2,  1,  5,  5,  3,  3,  2…
+$ UNDER4_3M             <dbl+lbl>  2,  4,  1,  3,  4,  4,  3,  1,  1,  1,  4,  4,  1…
+$ UNDER5_3M             <dbl+lbl>  4,  4,  3,  3,  4,  1,  3,  1,  3,  5,  4,  4,  3…
+$ UNDER6_3M             <dbl+lbl>  4,  5,  1,  2,  4,  1,  2,  1,  3,  5,  4,  4,  2…
+$ UNDER7_3M             <dbl+lbl>  4,  4,  1,  3,  3,  1,  4,  1,  2,  5,  4,  4,  1…
+$ UNDER8_3M             <dbl+lbl>  3,  4,  5,  3,  4,  4,  3,  4,  3,  2,  4,  4,  5…
+$ UNDER9_3M             <dbl+lbl>  3,  4,  2,  2,  4,  4,  2,  4,  1,  2,  1,  1,  5…
+$ UNDER10_3M            <dbl+lbl>  3,  4,  3,  2,  4,  2,  2,  4,  2,  1,  1,  2,  3…
+$ UNDER11_3M            <dbl+lbl>  3,  3,  3,  3,  4,  4,  2,  5,  1,  1,  4,  3,  2…
+$ UNDER12_3M            <dbl+lbl>  2,  4,  3,  3,  4,  1,  3,  1,  3,  1,  4,  1,  1…
+$ UNDER13_3M            <dbl+lbl>  1,  3,  3,  3,  4,  3,  3,  1,  4,  1,  4,  3,  1…
+$ UNDER14_3M            <dbl+lbl>  1,  5,  1,  2,  2,  1,  1,  1,  1,  1,  1,  1,  1…
+$ UNDER15_3M            <dbl+lbl>  1,  3,  5,  2,  2,  1,  1,  1,  1,  1,  4,  1,  1…
+$ UNDER16_3M            <dbl+lbl>  4,  4,  1,  2,  3,  3,  1,  1,  2,  1,  3,  1,  1…
+$ UNDER17_3M            <dbl+lbl>  1,  3,  1,  2,  2,  1,  3,  1,  2,  1,  3,  1,  2…
+$ HTN_3M                <dbl+lbl>  0,  0,  1,  0,  0,  0,  0,  1,  1,  1,  1,  0,  0…
+$ MI_3M                 <dbl+lbl>  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0…
+$ DM_3M                 <dbl+lbl>  0,  0,  1,  0,  1,  1,  0,  0,  0,  0,  0,  0,  0…
+$ CHOLES_3M             <dbl+lbl>  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  1,  0,  1…
+$ TRAFFIC_3M            <dbl+lbl>  4,  1,  1,  2,  2,  2,  2,  1,  4,  1,  1,  1,  3…
+$ DAY_CRIME_3M          <dbl+lbl>  3,  1,  1,  1,  1,  3,  1,  2,  2,  1,  1,  3,  1…
+$ NIGHT_CRIME_3M        <dbl+lbl>  2,  1,  1,  1,  1,  2,  1,  1,  2,  1,  2,  1,  1…
+$ WALK_GROCERY1_3M      <dbl+lbl>  3,  2,  2,  2,  4,  4,  2,  1,  4,  1,  1,  1,  4…
+$ WALK_GROCERY2_3M      <dbl+lbl>  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1…
+$ CAR_GROCERY_3M        <dbl+lbl>  1,  1,  4,  1,  1,  1,  1,  1,  1,  1,  1,  4,  1…
+$ AVERAGE_SBP_3M        <dbl> 131.00000, 138.00000, 129.00000, 137.66667, 131.00000,…
+$ AVERAGE_DBP_3M        <dbl> 83.00000, 93.00000, 80.66667, 75.66667, 73.66667, 79.0…
+$ WEIGHT_3M             <dbl> 213.0, 216.0, 176.0, 208.2, 178.0, 177.0, 172.2, 167.0…
+$ EMPLOY_6M             <dbl+lbl> 6, 4, 5, 1, 4, 1, 2, 6, 5, 5, 5, 2, 5, 3, 2, 5, 5,…
+$ AVGSBP_6M             <dbl> 129.00000, 135.00000, 129.00000, 140.00000, 131.33333,…
+$ AVGDBP_6M             <dbl> 73.00000, 91.66667, 91.66667, 85.66667, 73.00000, NA, …
+$ FOODINSECURITY1_6M    <dbl+lbl> 3, 1, 1, 2, 2, 3, 1, 2, 3, 3, 1, 1, 2, 3, 3, 2, 1,…
+$ FOODINSECURITY2_6M    <dbl+lbl> 3, 1, 1, 2, 2, 3, 1, 2, 3, 3, 1, 2, 2, 3, 3, 2, 2,…
+$ TFEQ1_6M              <dbl+lbl> 1, 4, 4, 3, 4, 1, 4, 2, 1, 4, 3, 4, 3, 2, 1, 3, 3,…
+$ TFEQ2_6M              <dbl+lbl> 1, 4, 3, 3, 4, 1, 2, 1, 1, 4, 3, 4, 2, 2, 1, 3, 1,…
+$ TFEQ3_6M              <dbl+lbl> 1, 4, 4, 3, 4, 1, 4, 1, 3, 3, 3, 4, 4, 2, 4, 3, 3,…
+$ TFEQ4_6M              <dbl+lbl> 2, 3, 4, 1, 1, 2, 3, 1, 4, 1, 3, 2, 4, 3, 1, 3, 3,…
+$ TFEQ5_6M              <dbl+lbl> 1, 4, 2, 4, 4, 1, 4, 1, 1, 4, 1, 3, 2, 1, 3, 4, 2,…
+$ TFEQ6_6M              <dbl> 4, 8, 4, 6, 6, 5, 8, 3, 6, 3, 8, 7, 5, 2, 3, 5, 1, 7, …
+$ UNDER1_6M             <dbl+lbl> 4, 4, 5, 3, 3, 1, 4, 2, 5, 3, 4, 4, 5, 1, 1, 3, 1,…
+$ UNDER2_6M             <dbl+lbl> 3, 4, 5, 3, 3, 1, 3, 2, 3, 3, 3, 4, 4, 1, 1, 3, 3,…
+$ UNDER3_6M             <dbl+lbl> 1, 4, 3, 1, 3, 1, 3, 2, 5, 1, 4, 4, 5, 1, 1, 4, 4,…
+$ UNDER4_6M             <dbl+lbl> 3, 5, 1, 3, 3, 1, 5, 3, 2, 1, 1, 2, 1, 1, 5, 3, 2,…
+$ UNDER5_6M             <dbl+lbl> 3, 4, 3, 2, 3, 1, 2, 3, 3, 1, 3, 4, 5, 1, 1, 3, 2,…
+$ UNDER6_6M             <dbl+lbl> 4, 5, 3, 3, 3, 1, 3, 3, 3, 3, 5, 4, 4, 3, 4, 2, 1,…
+$ UNDER7_6M             <dbl+lbl> 3, 4, 1, 3, 3, 1, 4, 1, 3, 3, 3, 4, 1, 1, 2, 3, 1,…
+$ UNDER8_6M             <dbl+lbl> 3, 4, 1, 3, 3, 5, 2, 3, 5, 3, 1, 5, 5, 5, 3, 4, 5,…
+$ UNDER9_6M             <dbl+lbl> 3, 4, 1, 3, 3, 4, 2, 5, 5, 3, 1, 4, 4, 5, 1, 3, 2,…
+$ UNDER10_6M            <dbl+lbl> 3, 4, 1, 3, 3, 1, 2, 3, 3, 5, 5, 1, 3, 5, 1, 3, 2,…
+$ UNDER11_6M            <dbl+lbl> 3, 4, 1, 2, 3, 1, 2, 2, 1, 3, 1, 2, 5, 5, 1, 4, 2,…
+$ UNDER12_6M            <dbl+lbl> 1, 4, 3, 2, 3, 1, 2, 3, 5, 1, 4, 2, 1, 1, 1, 2, 2,…
+$ UNDER13_6M            <dbl+lbl> 1, 4, 3, 2, 3, 1, 3, 3, 3, 1, 4, 1, 1, 1, 2, 2, 2,…
+$ UNDER14_6M            <dbl+lbl> 1, 4, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1,…
+$ UNDER15_6M            <dbl+lbl> 1, 4, 3, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 1, 1, 2, 2,…
+$ UNDER16_6M            <dbl+lbl> 1, 5, 3, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 3,…
+$ UNDER17_6M            <dbl+lbl> 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4,…
+$ HT_6M                 <dbl> 60.00, 62.25, 65.50, 64.00, 64.50, 58.50, 65.00, 64.00…
+$ PA_WORK_6M            <dbl+lbl> 6, 6, 6, 1, 6, 1, 1, 6, 6, 6, 6, 1, 6, 6, 1, 6, 5,…
+$ PA_EXER_6M            <dbl+lbl> 3, 1, 1, 2, 2, 4, 1, 1, 4, 1, 1, 2, 2, 4, 5, 2, 2,…
+$ PA_STRENUOUS_6M       <dbl+lbl> 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1,…
+$ PA_WEEK_6M            <dbl+lbl> 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1,…
+$ SMOKER_6M             <dbl+lbl> 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+$ HTN_6M                <dbl+lbl> 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0,…
+$ MI_6M                 <dbl+lbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ DM_6M                 <dbl+lbl> 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ CHOLES_6M             <dbl+lbl> 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1,…
+$ WEIGHT_6M             <dbl> 223.4, 210.6, 164.6, 211.6, 175.8, 177.0, 175.6, 157.5…
+$ BMI_6M                <dbl> 43.62506, 38.20630, 26.97134, 36.31709, 29.70672, 36.3…
+$ TRAFFIC_6M            <dbl+lbl> 4, 2, 2, 1, 1, 2, 1, 1, 1, 1, 4, 1, 4, 2, 1, 1, 3,…
+$ DAY_CRIME_6M          <dbl+lbl> 4, 2, 2, 1, 1, 3, 2, 2, 1, 1, 4, 1, 2, 3, 1, 2, 3,…
+$ NIGHT_CRIME_6M        <dbl+lbl> 2, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1,…
+$ WALK_GROCERY1_6M      <dbl+lbl> 1, 1, 2, 2, 4, 4, 1, 2, 4, 1, 4, 1, 1, 4, 1, 2, 4,…
+$ WALK_GROCERY2_6M      <dbl+lbl> 3, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2,…
+$ CAR_GROCERY_6M        <dbl+lbl> 1, 2, 4, 1, 1, 1, 1, 1, 2, 4, 1, 4, 1, 2, 1, 1, 2,…
+$ FI_screen             <dbl+lbl> 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1,…
+$ TFEQ6_cat             <dbl> 2, 4, 4, 3, 1, 3, 2, 1, 3, 1, 1, 1, 2, 1, 1, 2, 1, 2, …
+$ COG_REST              <dbl> 8, 21, 19, 17, 14, 13, 9, 6, 18, 14, 14, 6, 7, 8, 11, …
+$ COG_REST_SCALE        <dbl> 8.333333, 62.500000, 54.166668, 45.833332, 33.333332, …
+$ POS_ENCOUR            <dbl> 9, 22, 13, 25, 15, NA, 10, 12, 28, 11, 25, 18, 13, 22,…
+$ NEG_SABOTAG           <dbl> 27, 26, 24, 21, 25, 18, 27, 23, 15, 26, 29, 26, 26, 30…
+$ LRC_4                 <dbl+lbl>  3,  3,  4,  3,  3,  2,  1,  3,  3,  3,  1,  4,  4…
+$ BMI_cat               <dbl+lbl> 5, 4, 2, 4, 2, 3, 2, 2, 4, 4, 1, 4, 3, 5, 1, 4, 2,…
+$ TFEQ6_cat_3M          <dbl> 2, 4, 3, 3, 3, 3, 1, 1, 3, 4, 2, 3, 2, 2, NA, 3, 3, 3,…
+$ COG_REST_3M           <dbl> 12, 22, 18, 22, 20, 16, 7, 6, 11, 21, 18, 13, 11, 14, …
+$ COG_REST_SCALE_3M     <dbl> 25.000000, 66.666664, 50.000000, 66.666664, 58.333332,…
+$ POS_ENCOUR_3M         <dbl> 23, 27, 17, 20, 22, 13, 17, 7, 21, 30, 28, 24, 12, 7, …
+$ NEG_SABOTAG_3M        <dbl> 22, 37, 27, 24, 33, 24, 21, 23, 20, 12, 29, 18, 22, 26…
+$ bmi_3M                <dbl> 40.24160, 37.65838, 27.97852, 34.64251, 29.61752, 37.6…
+$ BMI_cat_3M            <dbl+lbl>  5,  4,  2,  3,  2,  4,  2,  2,  4,  4,  1,  4,  3…
+$ per_wt_change_3M      <dbl> -0.2808989, 0.2320186, 0.4566210, -2.3452158, 2.890173…
+$ per_wt_change_BOCF_3M <dbl> -0.2808989, 0.2320186, 0.4566210, -2.3452158, 2.890173…
+$ SBPchange_3M          <dbl> 5.3333335, -15.6666670, -2.6666667, 16.3333340, 18.000…
+$ SBPchange_BOCF_3M     <dbl> 5.3333335, -15.6666670, -2.6666667, 16.3333340, 18.000…
+$ DBPchange_3M          <dbl> 6.666667, 2.000000, -4.333333, 9.666667, 14.333333, 1.…
+$ DBPchange_BOCF_3M     <dbl> 6.666667, 2.000000, -4.333333, 9.666667, 14.333333, 1.…
+$ TFEQ6_cat_6M          <dbl> 2, 4, 2, 3, 3, 3, 4, 2, 3, 2, 4, 4, 3, 1, 2, 3, 1, 4, …
+$ COG_REST_6M           <dbl> 8, 23, 19, 17, 20, 9, 21, 8, 13, 18, 17, 21, 18, 11, 1…
+$ COG_REST_SCALE_6M     <dbl> 8.333333, 70.833336, 54.166668, 45.833332, 58.333332, …
+$ POS_ENCOUR_6M         <dbl> 21, 30, 21, 18, 21, 7, 24, 16, 24, 15, 23, 26, 25, 9, …
+$ NEG_SABOTAG_6M        <dbl> 18, 41, 18, 21, 22, 17, 17, 23, 27, 20, 20, 23, 23, 26…
+$ LRC_4_6M              <dbl+lbl> 3, 3, 3, 3, 2, 2, 1, 1, 4, 3, 1, 3, 3, 4, 2, 3, 2,…
+$ bmi_6M                <dbl> 42.20645, 36.71692, 26.16627, 35.20824, 29.25146, 37.6…
+$ BMI_cat_6M            <dbl+lbl> 5, 4, 2, 4, 2, 4, 2, 2, 4, 4, 1, 4, 3, 5, 1, 5, 2,…
+$ per_wt_change_6M      <dbl> 4.5880151, -2.2737820, -6.0502281, -0.7504690, 1.61849…
+$ SBPchange_6M          <dbl> 3.3333333, -18.6666660, -2.6666667, 18.6666660, 18.333…
+$ SBPchange_BOCF_6M     <dbl> 3.3333333, -18.6666660, -2.6666667, 18.6666660, 18.333…
+$ SBPchange_LOCF_6M     <dbl> 3.3333333, -18.6666660, -2.6666667, 18.6666660, 18.333…
+$ DBPchange_6M          <dbl> -3.3333333, 0.6666667, 6.6666665, 19.6666660, 13.66666…
+$ DBPchange_BOCF_6M     <dbl> -3.3333333, 0.6666667, 6.6666665, 19.6666660, 13.66666…
+$ DBPchange_LOCF_6M     <dbl> -3.3333333, 0.6666667, 6.6666665, 19.6666660, 13.66666…
+$ FI_screen_6M          <dbl+lbl> 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1,…
+Length  Class   Mode 
+     0   NULL   NULL 
+ 
+NULL
+
+Length  Class   Mode 
+     0   NULL   NULL 
+ 
+NULL
+
+# A tibble: 1 x 170
+     id   age gender  ethn  race marital  educ employ AVERAGE_SBP AVERAGE_DBP    ht
+  <int> <int>  <int> <int> <int>   <int> <int>  <int>       <int>       <int> <int>
+1     0     0      0     0     0       0     0      0           0           0     0
+# … with 159 more variables: weight <int>, bmi <int>, FOODSECURITY1 <int>,
+#   FOODSECURITY2 <int>, TFEQ1 <int>, TFEQ2 <int>, TFEQ3 <int>, TFEQ4 <int>,
+#   TFEQ5 <int>, TFEQ6 <int>, UNDER1 <int>, UNDER2 <int>, UNDER3 <int>, UNDER4 <int>,
+#   UNDER5 <int>, UNDER6 <int>, UNDER7 <int>, UNDER8 <int>, UNDER9 <int>,
+#   UNDER10 <int>, UNDER11 <int>, UNDER12 <int>, UNDER13 <int>, UNDER14 <int>,
+#   UNDER15 <int>, UNDER_16 <int>, UNDER_17 <int>, PA_WORK <int>, PA_EXER <int>,
+#   PA_STRENUOUS <int>, PA_WEEK <int>, htn <int>, mi <int>, dm <int>, choles <int>,
+#   DAY_CRIME <int>, NIGHT_CRIME <int>, WALK_GROCERY1 <int>, WALK_GROCERY2 <int>,
+#   CAR_GROCERY <int>, TFEQ1_3M <int>, TFEQ2_3M <int>, TFEQ3_3M <int>, TFEQ4_3M <int>,
+#   TFEQ5_3M <int>, TFEQ6_3M <int>, UNDER1_3M <int>, UNDER2_3M <int>, UNDER3_3M <int>,
+#   UNDER4_3M <int>, UNDER5_3M <int>, UNDER6_3M <int>, UNDER7_3M <int>,
+#   UNDER8_3M <int>, UNDER9_3M <int>, UNDER10_3M <int>, UNDER11_3M <int>,
+#   UNDER12_3M <int>, UNDER13_3M <int>, UNDER14_3M <int>, UNDER15_3M <int>,
+#   UNDER16_3M <int>, UNDER17_3M <int>, HTN_3M <int>, MI_3M <int>, DM_3M <int>,
+#   CHOLES_3M <int>, TRAFFIC_3M <int>, DAY_CRIME_3M <int>, NIGHT_CRIME_3M <int>,
+#   WALK_GROCERY1_3M <int>, WALK_GROCERY2_3M <int>, CAR_GROCERY_3M <int>,
+#   AVERAGE_SBP_3M <int>, AVERAGE_DBP_3M <int>, WEIGHT_3M <int>, EMPLOY_6M <int>,
+#   AVGSBP_6M <int>, AVGDBP_6M <int>, FOODINSECURITY1_6M <int>,
+#   FOODINSECURITY2_6M <int>, TFEQ1_6M <int>, TFEQ2_6M <int>, TFEQ3_6M <int>,
+#   TFEQ4_6M <int>, TFEQ5_6M <int>, TFEQ6_6M <int>, UNDER1_6M <int>, UNDER2_6M <int>,
+#   UNDER3_6M <int>, UNDER4_6M <int>, UNDER5_6M <int>, UNDER6_6M <int>,
+#   UNDER7_6M <int>, UNDER8_6M <int>, UNDER9_6M <int>, UNDER10_6M <int>,
+#   UNDER11_6M <int>, UNDER12_6M <int>, UNDER13_6M <int>, …
+   Mode   FALSE    TRUE 
+logical     102     102 
+   Mode   FALSE    TRUE 
+logical     144      60 
+longdata$Visit == "Positive" 
+       n  missing distinct 
+     204        0        2 
+                      
+Value      FALSE  TRUE
+Frequency    102   102
+Proportion   0.5   0.5
+RStudioGD 
+        2 
+# A tibble: 6 x 5
+# Groups:   Visit_inc [3]
+  Visit_inc Visit    mean_value sd_score     n
+  <chr>     <chr>         <dbl>    <dbl> <int>
+1 3 Month   Negative       22.9     6.56    32
+2 3 Month   Positive       18.6     7.01    32
+3 6 Month   Negative       22       5.89    34
+4 6 Month   Positive       16.6     6.91    34
+5 Baseline  Negative       24.3     4.61    34
+6 Baseline  Positive       14.1     6.17    33
+
+Call:
+lm(formula = POS_dif ~ gender + race + age, data = longdata_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.5071  -3.6601   0.3399   4.3399  14.3945 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  4.175643   3.152111   1.325   0.1884   
+gender      -4.688057   1.627185  -2.881   0.0049 **
+race         1.860934   0.976335   1.906   0.0597 . 
+age          0.005467   0.055324   0.099   0.9215   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.59 on 95 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.104,	Adjusted R-squared:  0.0757 
+F-statistic: 3.675 on 3 and 95 DF,  p-value: 0.01486
+
+
+Call:
+lm(formula = POS_dif ~ gender + race + age + educ, data = longdata_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.5154  -3.9771   0.1365   4.1365  14.0871 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  4.327446   3.191466   1.356  0.17837   
+gender      -4.875399   1.707198  -2.856  0.00528 **
+race         1.882278   0.982365   1.916  0.05840 . 
+age         -0.004941   0.061950  -0.080  0.93660   
+educ         0.162152   0.426435   0.380  0.70462   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.62 on 94 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.1054,	Adjusted R-squared:  0.0673 
+F-statistic: 2.768 on 4 and 94 DF,  p-value: 0.03176
+
+
+Call:
+lm(formula = POS_dif ~ bmi + bmi_3M + bmi_6M, data = longdata_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.1743  -5.5554   0.7165   5.2404  13.7394 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   8.0875     4.0112   2.016   0.0468 *
+bmi           0.1998     0.2578   0.775   0.4404  
+bmi_3M       -1.4867     0.6553  -2.269   0.0257 *
+bmi_6M        1.1218     0.5350   2.097   0.0388 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.912 on 89 degrees of freedom
+  (9 observations deleted due to missingness)
+Multiple R-squared:  0.05947,	Adjusted R-squared:  0.02777 
+F-statistic: 1.876 on 3 and 89 DF,  p-value: 0.1394
+
+
+Call:
+lm(formula = POS_dif ~ bmi + BMI_dif, data = longdata_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.3579  -5.1458   0.4277   4.7632  14.0044 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  5.96842    3.56848   1.673   0.0977 .
+bmi         -0.09821    0.10881  -0.903   0.3690  
+BMI_dif     -0.00225    0.23064  -0.010   0.9922  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.893 on 96 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.009306,	Adjusted R-squared:  -0.01133 
+F-statistic: 0.4509 on 2 and 96 DF,  p-value: 0.6384
+
+
+Call:
+lm(formula = POS_dif ~ BMI_cat + BMI_cat_3M + BMI_cat_6M, data = longdata_1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.0799  -5.4502   0.5776   5.5776  11.7752 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   3.7928     2.0367   1.862   0.0659 .
+BMI_cat       1.8024     1.4831   1.215   0.2275  
+BMI_cat_3M   -0.9168     2.6088  -0.351   0.7261  
+BMI_cat_6M   -1.2282     2.6160  -0.470   0.6399  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.053 on 89 degrees of freedom
+  (9 observations deleted due to missingness)
+Multiple R-squared:  0.02077,	Adjusted R-squared:  -0.01223 
+F-statistic: 0.6294 on 3 and 89 DF,  p-value: 0.5979
+
+
+Call:
+lm(formula = POS_dif ~ BMI_cat + BMI_dif, data = longdata_1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.266  -4.975   0.316   5.054  13.691 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  3.47922    1.72349   2.019   0.0463 *
+BMI_cat     -0.22716    0.53439  -0.425   0.6717  
+BMI_dif      0.04665    0.22317   0.209   0.8349  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.916 on 96 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.002776,	Adjusted R-squared:  -0.018 
+F-statistic: 0.1336 on 2 and 96 DF,  p-value: 0.8751
+
+
+Call:
+lm(formula = NEG_dif ~ gender + race + age, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.3514  -4.5037   0.1628   2.2218  17.1791 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.73621    3.27815  -0.225    0.823
+gender       1.38093    1.68524   0.819    0.415
+race        -0.60459    1.01470  -0.596    0.553
+age         -0.04268    0.05754  -0.742    0.460
+
+Residual standard error: 6.854 on 98 degrees of freedom
+Multiple R-squared:  0.01411,	Adjusted R-squared:  -0.01607 
+F-statistic: 0.4674 on 3 and 98 DF,  p-value: 0.7057
+
+
+Call:
+lm(formula = NEG_dif ~ gender + race + age + employ + educ, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.7134  -4.6221   0.2489   2.6593  15.5030 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -1.23294    3.30690  -0.373   0.7101  
+gender       2.04091    1.78359   1.144   0.2554  
+race        -0.54229    1.04558  -0.519   0.6052  
+age          0.02604    0.07096   0.367   0.7144  
+employ      -0.23580    0.41454  -0.569   0.5708  
+educ        -0.83566    0.44226  -1.890   0.0618 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.798 on 96 degrees of freedom
+Multiple R-squared:  0.04998,	Adjusted R-squared:  0.0004989 
+F-statistic:  1.01 on 5 and 96 DF,  p-value: 0.4161
+
+
+Call:
+lm(formula = NEG_dif ~ bmi + bmi_3M + bmi_6M, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.5807  -4.2648   0.0185   3.3926  17.3529 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   2.1750     3.8006   0.572  0.56853   
+bmi          -0.7417     0.2406  -3.082  0.00271 **
+bmi_3M        1.1571     0.6184   1.871  0.06450 . 
+bmi_6M       -0.5512     0.5102  -1.080  0.28279   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.6 on 92 degrees of freedom
+  (6 observations deleted due to missingness)
+Multiple R-squared:  0.1153,	Adjusted R-squared:  0.08641 
+F-statistic: 3.995 on 3 and 92 DF,  p-value: 0.01008
+
+
+Call:
+lm(formula = NEG_dif ~ bmi + BMI_dif, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.0982  -4.3817   0.2243   3.1632  18.4933 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   2.5325     3.4219   0.740   0.4610  
+bmi          -0.1520     0.1040  -1.462   0.1469  
+BMI_dif       0.3667     0.2172   1.688   0.0946 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.632 on 99 degrees of freedom
+Multiple R-squared:  0.06748,	Adjusted R-squared:  0.04864 
+F-statistic: 3.582 on 2 and 99 DF,  p-value: 0.03149
+
+
+Call:
+lm(formula = NEG_dif ~ BMI_cat + BMI_cat_3M + BMI_cat_6M, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.9398  -4.0939  -0.4398   3.5364  18.0602 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   0.1728     1.9072   0.091  0.92801   
+BMI_cat      -3.9490     1.3229  -2.985  0.00363 **
+BMI_cat_3M    2.5519     2.4305   1.050  0.29647   
+BMI_cat_6M    0.5888     2.4445   0.241  0.81020   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.616 on 92 degrees of freedom
+  (6 observations deleted due to missingness)
+Multiple R-squared:  0.111,	Adjusted R-squared:  0.08204 
+F-statistic:  3.83 on 3 and 92 DF,  p-value: 0.01236
+
+
+Call:
+lm(formula = NEG_dif ~ BMI_cat + BMI_dif, data = longdata_2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.0396  -4.0417   0.1567   3.2944  18.5326 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.07312    1.65073  -0.044   0.9648  
+BMI_cat     -0.77837    0.51156  -1.522   0.1313  
+BMI_dif      0.40498    0.21023   1.926   0.0569 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.626 on 99 degrees of freedom
+Multiple R-squared:  0.06912,	Adjusted R-squared:  0.05031 
+F-statistic: 3.675 on 2 and 99 DF,  p-value: 0.02886
+
+
+Call:
+lm(formula = BMI_dif ~ gender + race + age, data = longdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.9809 -1.3098 -0.1292  0.8969 12.5119 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.74359    0.94192   2.913  0.00399 ** 
+gender       0.74151    0.48422   1.531  0.12727    
+race         1.27254    0.29156   4.365 2.04e-05 ***
+age         -0.09881    0.01653  -5.976 1.03e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.785 on 200 degrees of freedom
+Multiple R-squared:  0.2455,	Adjusted R-squared:  0.2342 
+F-statistic:  21.7 on 3 and 200 DF,  p-value: 3.305e-12
+
+
+Call:
+lm(formula = BMI_dif ~ gender + race + age + employ + educ, data = longdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.2857 -1.4905  0.1742  0.5802 12.0980 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.83593    0.92631   3.062  0.00251 ** 
+gender       0.74610    0.49961   1.493  0.13693    
+race         1.47668    0.29288   5.042 1.04e-06 ***
+age         -0.05169    0.01988  -2.601  0.01001 *  
+employ      -0.35938    0.11612  -3.095  0.00225 ** 
+educ        -0.37588    0.12388  -3.034  0.00274 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.693 on 198 degrees of freedom
+Multiple R-squared:  0.3017,	Adjusted R-squared:  0.2841 
+F-statistic: 17.11 on 5 and 198 DF,  p-value: 4.691e-14
+
+
+Call:
+lm(formula = BMI_dif ~ bmi + bmi_3M + bmi_6M, data = longdata)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-8.694e-13  1.000e-17  4.510e-15  1.038e-14  3.471e-14 
+
+Coefficients:
+              Estimate Std. Error    t value Pr(>|t|)    
+(Intercept) -8.205e-15  2.635e-14 -3.110e-01    0.756    
+bmi         -1.000e+00  1.668e-15 -5.995e+14   <2e-16 ***
+bmi_3M       6.629e-15  4.287e-15  1.546e+00    0.124    
+bmi_6M       1.000e+00  3.537e-15  2.827e+14   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.47e-14 on 188 degrees of freedom
+  (12 observations deleted due to missingness)
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 1.632e+29 on 3 and 188 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = BMI_dif ~ bmi + BMI_dif, data = longdata)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.9560 -1.7478 -0.5700  0.2713 13.2112 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.94334    1.05235   4.697 4.86e-06 ***
+bmi         -0.14633    0.03207  -4.562 8.77e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.038 on 202 degrees of freedom
+Multiple R-squared:  0.09341,	Adjusted R-squared:  0.08893 
+F-statistic: 20.81 on 1 and 202 DF,  p-value: 8.773e-06
+
